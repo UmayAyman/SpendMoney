@@ -1,0 +1,36 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 64.15rem;
+    margin-left: 110px;
+}
+
+.product-card {
+    margin: 0.5rem;
+    width: 293px;
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.product-card img {
+    padding: 10px;
+    width: 170px;
+    height: 170px;
+    object-fit: contain;
+    margin-bottom: -18px;
+}
+
+.product-card h3 {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-bottom: -15px;
+}
+
+.product-card p {
+    color: rgb(76, 170, 76);
+    font-size: 18px;
+}

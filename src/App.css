@@ -1,0 +1,76 @@
+body {
+  background-color: whitesmoke;
+}
+
+.billgates {
+  background-color: white;
+  align-content: center;
+  margin-left: 120px;
+  margin-top: 25px;
+  width: 63rem;
+}
+
+.billgates img {
+  border-radius: 200px;
+  margin-top: 33px;
+  width: 150px;
+  height: auto;
+}
+
+.billgates, p {
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.increment {
+  background-color: rgb(128, 221, 128);
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: 2px solid rgb(128, 221, 128);
+  width: 80px;
+  height: 40px;
+}
+
+.decrement {
+  background-color: rgb(237, 232, 232);
+  border: 2px solid rgb(237, 232, 232);
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 18px;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.increment:active {
+  background-color: darkgreen;
+}
+
+.decrement:active {
+  background-color: red;
+}
+
+.buttons h2 {
+  background-color: white;
+  border: 1px solid rgb(184, 179, 179);
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 18px;
+  width: 80px;
+  height: 40px;
+  align-content: center;
+}
