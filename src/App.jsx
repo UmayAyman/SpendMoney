@@ -11,7 +11,7 @@ function App() {
     <>
       <Navbar />
       <div className='billgates'>
-        <img src='src/assets/billgates.jpg' alt='billgate' />
+        <img src='https://neal.fun/spend/billgates.jpg' alt='billgate' />
         <p>Spend Bill Gates' Money</p>
       </div>
       <SpendMoneyCounter totalMoney={totalMoney} />
