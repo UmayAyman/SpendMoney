@@ -1,27 +1,33 @@
-import React, { useState } from 'react';
-import Decrement from './decrement';
-import Increment from './increment';
+import React from "react";
 
-function Counter() {
-const [count, setCount] = useState(0);
+function Counter({ quantity, onChange, price, setTotalMoney, totalMoney }) {
+    const handleIncrement = () => {
+        const newQuantity = quantity + 1;
+        const totalCost = newQuantity * price;
 
-const handleIncrement = () => {
-    setCount(prevCount => prevCount + 1);
-};
+        if (totalMoney >= totalCost) {
+            onChange(newQuantity);
+            setTotalMoney(totalMoney - price);
+        } else {
+            alert("You don't have enough money to purchase this item.");
+        }
+    };
 
-const handleDecrement = () => {
-    if (count > 0) {
-    setCount(prevCount => prevCount - 1);
-    }
-};
+    const handleDecrement = () => {
+        if (quantity > 0) {
+            const newQuantity = quantity - 1;
+            onChange(newQuantity);
+            setTotalMoney(totalMoney + price);
+        }
+    };
 
-return (
-    <div className="buttons">
-            <Decrement className={`decrement ${count > 0 ? 'active-sell' : ''}`} onDecrement={handleDecrement} />
-            <h2>{count}</h2>
-            <Increment onIncrement={handleIncrement} />
-    </div>
-);
+    return (
+        <div className="counter">
+            <button className = "decrement" onClick={handleDecrement}>Sell</button>
+            <h2>{quantity}</h2>
+            <button className = "increment" onClick={handleIncrement}>Buy</button>
+        </div>
+    );
 }
 
 export default Counter;

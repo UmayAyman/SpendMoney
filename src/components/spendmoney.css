@@ -1,0 +1,14 @@
+.spend-money-container {
+    background-color: rgb(17, 217, 134);
+    border: 2px solid rgb(17, 217, 134);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 118px;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    width: 63rem;
+    height: 5rem;
+}
